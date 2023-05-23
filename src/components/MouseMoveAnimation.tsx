@@ -8,19 +8,18 @@ const Blob = styled.div`
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	border-radius: 50%;
-	background: var(--dbg);
-	animation: rotate 20s infinite;
+	animation: rotate 4s infinite;
 	opacity: 0.8;
-	backdrop-filter: blur(120px);
-	box-shadow: 0 0 180px 30px var(--text);
+	/* backdrop-filter: blur(120px); */
+	box-shadow: 20px 10px 180px 50px var(--lbg);
+	/* border-radius: 100%; */
 	@keyframes rotate {
 		from {
 			transform: rotate(0deg);
 		}
 
 		50% {
-			transform: scale(1, 1.4);
+			transform: scale(0.3, 0.4);
 		}
 
 		to {

@@ -8,7 +8,7 @@ const App: React.FC = () => {
 	return (
 		<>
 			<GlobalStyle />
-			<MouseMoveAnimation />
+			{/* <MouseMoveAnimation /> */}
 			<BrowserRouter>
 				<Navbar />
 				<Routes>

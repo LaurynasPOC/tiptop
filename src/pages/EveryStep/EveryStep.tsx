@@ -28,7 +28,12 @@ const Boxes = [
 	},
 ];
 
-const EveryStep: React.FC = () => {
+interface Props {
+	isOpen: boolean;
+	setIsOpen: (isOpen:boolean)=> void
+}
+
+const EveryStep: React.FC<Props> = ({isOpen, setIsOpen}) => {
 	return (
 		<EveryStepStyles>
 			<div>
@@ -38,7 +43,7 @@ const EveryStep: React.FC = () => {
 							<h1>Every Step Counts</h1>
 							<TextBase margin='40px 0'>Get in Tip-Top shape and earn real rewards through movement within a self-sustaining ecosystem.</TextBase>
 							<FlexWrapper>
-								<Button variant={'primary'}>Download App</Button>
+								<Button onClick={()=>setIsOpen(!isOpen)} variant={'primary'}>Download App</Button>
 							</FlexWrapper>
 						</div>
 						<AnimatedVideo width='100%' srcSafari={'https://tiptop-media.s3.eu-central-1.amazonaws.com/mp4/phone-safari.mov'} srcChrome={PhonesVideo} />
