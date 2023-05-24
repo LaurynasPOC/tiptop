@@ -13,14 +13,6 @@ const SubscribeStyles = styled.div`
     padding: 80px 30px;
     border-radius: 20px;
     box-shadow: 0px 20px 40px rgba(0, 7, 10, 0.21);
-    @media ${smDesktop} {
-      padding: 40px 20px;
-    }
-    h3 {
-      @media ${smDesktop} {
-        font-size: 32px;
-      }
-    }
     p {
       margin: 10px auto;
       max-width: 920px;
@@ -34,6 +26,9 @@ const SubscribeStyles = styled.div`
         line-height: 24px;
         margin-bottom: 20px;
       }
+    }
+    @media ${smDesktop} {
+      padding: 40px 20px;
     }
   }
 `;
@@ -49,14 +44,12 @@ const Subscribe: React.FC = () => {
     e.preventDefault();
     const result: PostResponse = await post('subscribe', { email });
     if (result?.success) {
-      setResponse('Subscribed successful!');
-      setEmail('');
+      setEmail('Subscribed successful!');
       setTimeout(() => {
-        setResponse('');
+        setEmail('');
       }, 6000);
     } else {
-      setEmail('');
-      setResponse('Failed to subscribe');
+      setEmail('Failed to subscribe');
     }
   };
 

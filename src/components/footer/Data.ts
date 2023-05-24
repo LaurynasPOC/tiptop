@@ -1,13 +1,12 @@
-import { ReactComponent as Instagram } from '@assets/socialMediaIcons {ReactComponent as/Instagram.svg';
-import { ReactComponent as LinkedIn } from '@assets/socialMediaIcons/LinkedIn.svg';
-import { ReactComponent as TikTok } from '@assets/socialMediaIcons/TikTok.svg';
-import { ReactComponent as Youtube } from '@assets/socialMediaIcons/YouTube.svg';
-import { ReactComponent as Twitter } from '@assets/socialMediaIcons/Twitter.svg';
-import { ReactComponent as Facebook } from '@assets/socialMediaIcons/FacebookIcon.svg';
-import { ReactComponent as Discord } from '@assets/socialMediaIcons/Discord.svg';
-import { ReactComponent as Medium } from '@assets/socialMediaIcons/MediumIcon.svg';
-import { ReactComponent as Reddit } from '@assets/socialMediaIcons/RedditIcon.svg';
-import { SimpleLink } from '@components/links';
+import { ReactComponent as Instagram } from '@assets/social/Instagram.svg';
+import { ReactComponent as LinkedIn } from '@assets/social/LinkedIn.svg';
+import { ReactComponent as TikTok } from '@assets/social/TikTok.svg';
+import { ReactComponent as Youtube } from '@assets/social/YouTube.svg';
+import { ReactComponent as Twitter } from '@assets/social/Twitter.svg';
+import { ReactComponent as Facebook } from '@assets/social/FacebookIcon.svg';
+import { ReactComponent as Discord } from '@assets/social/Discord.svg';
+import { ReactComponent as Medium } from '@assets/social/MediumIcon.svg';
+import { ReactComponent as Reddit } from '@assets/social/RedditIcon.svg';
 
 interface SocialMediaLink {
   svg: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;

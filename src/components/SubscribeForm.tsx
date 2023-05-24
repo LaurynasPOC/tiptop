@@ -14,12 +14,6 @@ const FormStyles = styled.form`
     background: #d9d9d9;
     font-size: 18px;
   }
-  & > div:nth-of-type(2) {
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
-    font-size: 14px;
-  }
   & > button {
     margin-top: 20px;
   }
@@ -61,7 +55,6 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
         placeholder="Enter email address"
         required
       />
-      <div>{response}Subscribed succesful</div>
       {checkbox && (
         <>
           <Checkbox

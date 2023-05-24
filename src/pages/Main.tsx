@@ -17,13 +17,14 @@ import AppStore from '@assets/svg/app_store.svg';
 import Modal from '@components/Modal';
 import { useQuery } from '@styles/breakpoints';
 import Subscribe from './Subscribe/Subscribe';
+import Footer from '@components/footer/Footer';
 
 const Main: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { isDesktop } = useQuery();
   return (
     <>
-      {!isDesktop && <Video src={HeroVideo} bottom="200px" />}
+      {!isDesktop && <Video src={HeroVideo} />}
       <EveryStep isOpen={isOpen} setIsOpen={setIsOpen} />
       <OneSmallStep />
       <CarouselComponent />
@@ -33,7 +34,7 @@ const Main: React.FC = () => {
       <Ecosystem isOpen={isOpen} setIsOpen={setIsOpen} />
       <Faq />
       <Subscribe />
-      <EveryStep isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Footer />
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <h3 style={{ fontSize: '36px' }}>Download the TipTop App</h3>
         <FlexWrapper flexDirection="column" padding="30px 40px">
