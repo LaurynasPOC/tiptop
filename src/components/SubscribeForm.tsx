@@ -30,7 +30,6 @@ interface SubscribeFormProps {
   buttonText: string;
   checkbox: boolean;
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
-  response: string;
   email: string;
   setEmail: (value: string) => void;
 }
@@ -39,7 +38,6 @@ const SubscribeForm: React.FC<SubscribeFormProps> = ({
   buttonText,
   checkbox,
   onSubmit,
-  response,
   email,
   setEmail,
 }) => {

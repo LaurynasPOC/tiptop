@@ -12,3 +12,8 @@ export const post = async (path: string, body: Record<string, unknown> | null): 
     .catch(err => console.log(path, 'error', err));
   return result;
 };
+
+export const getMedium = () =>
+  fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@tiptop_io').then(
+    resp => resp.json(),
+  );

@@ -38,7 +38,6 @@ interface PostResponse {
 
 const Subscribe: React.FC = () => {
   const [email, setEmail] = useState<string>('');
-  const [response, setResponse] = useState<string>('');
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -59,7 +58,6 @@ const Subscribe: React.FC = () => {
         <h3>Subscribe to TipTop Newsletter</h3>
         <p>Join our growing community of fitness junkies and crypto enthusiasts!</p>
         <SubscribeForm
-          response={response}
           email={email}
           setEmail={setEmail}
           checkbox
