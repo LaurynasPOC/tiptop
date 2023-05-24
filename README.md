@@ -1,6 +1,6 @@
-### TIPTOP
+## TIPTOP
 
-This project was made with Create React App.
+This project was made with react and typescript.
 
 ### Description
 
@@ -13,7 +13,7 @@ Before you begin, ensure you have met the following requirements:
 You have installed the latest version of Node.js and npm.
 You have a Windows/Mac/Linux machine.
 
-To install and run My TIPTOP, follow these steps:
+### To install and run TIPTOP, follow these steps:
 
 Clone the repository
 
@@ -27,12 +27,10 @@ Change the current working directory to the location where you want the cloned d
 
 Type git clone, and then paste the URL you copied earlier. It will look like this:
 
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/LaurynasPOC/tiptop.git
 Press Enter to create your local clone.
 
 Navigate to the project directory
-
-cd tiptop
 
 ### Install the required packages
 
