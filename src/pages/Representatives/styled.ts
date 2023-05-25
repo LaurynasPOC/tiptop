@@ -19,7 +19,7 @@ export const SectionTriangle = styled(Triangle)`
 `;
 
 export const ContactBgWrap = styled(SectionWrapper)`
-  padding-top: 30px;
+  padding-top: 100px;
   background-image: url(${HeroBg});
   background-size: auto 100%;
   background-position: right center;
@@ -27,6 +27,7 @@ export const ContactBgWrap = styled(SectionWrapper)`
 `;
 
 export const ContactFormWrap = styled(GridWrapper)`
+  max-width: 700px;
   form {
     & > div {
       margin-bottom: 20px;
@@ -35,6 +36,11 @@ export const ContactFormWrap = styled(GridWrapper)`
       margin: 0 auto;
       display: block;
     }
+  }
+  label {
+    padding: 0 15px;
+    color: var(--lbg);
+    font-weight: 700;
   }
   & > div {
     &:first-child {

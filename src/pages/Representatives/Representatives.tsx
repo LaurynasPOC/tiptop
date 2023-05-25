@@ -1,5 +1,4 @@
-import { SetStateAction, useState } from 'react';
-import styled from 'styled-components';
+import { useState } from 'react';
 import Input from '@components/Input';
 import Button from '@components/Button';
 import { ContactFormWrap, ContactBgWrap, SectionTriangle } from './styled';
@@ -72,7 +71,16 @@ const Representative = (): JSX.Element => {
                     placeholder="email@example.com"
                     required
                   />
-                  <label style={{ padding: '0 15px', width: '100%' }}>Your Country*</label>
+                  <label
+                    style={{
+                      padding: '0 15px',
+                      width: '100%',
+                      color: 'var(--lbg)',
+                      fontWeight: 700,
+                    }}
+                  >
+                    Your Country*
+                  </label>
                   <CountrySelector
                     placeholder={'Select Country'}
                     value={country}

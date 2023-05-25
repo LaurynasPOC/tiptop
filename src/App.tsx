@@ -5,6 +5,7 @@ import Navbar from '@components/navigation/Navbar';
 import Main from '@pages/Main';
 import PaginatedItems from '@pages/Blog/PaginatedItems';
 import BlogPost from '@pages/Blog/BlogPost';
+import Representative from '@pages/Representatives/Representatives';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,9 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/blog" element={<PaginatedItems itemsPerPage={5} />} />
           <Route path="/blog/*" element={<BlogPost />} />
+        </Routes>
+        <Routes>
+          <Route path="/reps" element={<Representative />} />
         </Routes>
       </BrowserRouter>
     </>
