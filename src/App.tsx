@@ -6,6 +6,7 @@ import Main from '@pages/Main';
 import PaginatedItems from '@pages/Blog/PaginatedItems';
 import BlogPost from '@pages/Blog/BlogPost';
 import Representative from '@pages/Representatives/Representatives';
+import Contact from '@pages/Contact/Contact';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,9 @@ const App: React.FC = () => {
         </Routes>
         <Routes>
           <Route path="/reps" element={<Representative />} />
+        </Routes>
+        <Routes>
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
