@@ -20,7 +20,7 @@ import { InfoStyles } from './styled';
 const JoinTipTop: React.FC = () => {
   const { isTablet } = useQuery();
   return (
-    <SectionWrapper backgroundColor="var(--lbg)">
+    <SectionWrapper id="how-it-works" backgroundColor="var(--lbg)">
       <Container>
         <GridWrapper col={2} colL={1}>
           <Box>

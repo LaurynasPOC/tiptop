@@ -10,58 +10,67 @@ import { ReactComponent as Icon4 } from '../../assets/svg/every-step4.svg';
 import { EveryStepStyles, ImgBox } from './styled';
 
 const Boxes = [
-	{
-		img: <Icon1 />,
-		text: 'Active Lifestyle',
-	},
-	{
-		img: <Icon2 />,
-		text: 'Rewarding Ecosystem',
-	},
-	{
-		img: <Icon3 />,
-		text: 'Unique Collectibles',
-	},
-	{
-		img: <Icon4 />,
-		text: 'Sustainable Choice',
-	},
+  {
+    img: <Icon1 />,
+    text: 'Active Lifestyle',
+  },
+  {
+    img: <Icon2 />,
+    text: 'Rewarding Ecosystem',
+  },
+  {
+    img: <Icon3 />,
+    text: 'Unique Collectibles',
+  },
+  {
+    img: <Icon4 />,
+    text: 'Sustainable Choice',
+  },
 ];
 
 interface Props {
-	isOpen: boolean;
-	setIsOpen: (isOpen:boolean)=> void
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
-const EveryStep: React.FC<Props> = ({isOpen, setIsOpen}) => {
-	return (
-		<EveryStepStyles>
-			<div>
-				<Container>
-					<GridWrapper col={2} colL={1}>
-						<div>
-							<h1>Every Step Counts</h1>
-							<TextBase margin='40px 0'>Get in Tip-Top shape and earn real rewards through movement within a self-sustaining ecosystem.</TextBase>
-							<FlexWrapper>
-								<Button onClick={()=>setIsOpen(!isOpen)} variant={'primary'}>Download App</Button>
-							</FlexWrapper>
-						</div>
-						<AnimatedVideo width='100%' srcSafari={'https://tiptop-media.s3.eu-central-1.amazonaws.com/mp4/phone-safari.mov'} srcChrome={PhonesVideo} />
-					</GridWrapper>
-					<GridWrapper margin='40px 0 0' width={'100%'} col={4} colXl={2} colSm={1}>
-						{Boxes.map(({ img, text }) => (
-							<FlexWrapper alignItems='center'>
-								<ImgBox margin='0 40px 0 0'>{img}</ImgBox>
-								<TextBase width='110px' fontSize={'18px'}>
-									{text}
-								</TextBase>
-							</FlexWrapper>
-						))}
-					</GridWrapper>
-				</Container>
-			</div>
-		</EveryStepStyles>
-	);
+const EveryStep: React.FC<Props> = ({ isOpen, setIsOpen }) => {
+  return (
+    <EveryStepStyles id="our-story">
+      <div>
+        <Container>
+          <GridWrapper col={2} colL={1}>
+            <div>
+              <h1>Every Step Counts</h1>
+              <TextBase margin="40px 0">
+                Get in Tip-Top shape and earn real rewards through movement within a self-sustaining
+                ecosystem.
+              </TextBase>
+              <FlexWrapper>
+                <Button onClick={() => setIsOpen(!isOpen)} variant={'primary'}>
+                  Download App
+                </Button>
+              </FlexWrapper>
+            </div>
+            <AnimatedVideo
+              width="100%"
+              srcSafari={'https://tiptop-media.s3.eu-central-1.amazonaws.com/mp4/phone-safari.mov'}
+              srcChrome={PhonesVideo}
+            />
+          </GridWrapper>
+          <GridWrapper margin="40px 0 0" width={'100%'} col={4} colXl={2} colSm={1}>
+            {Boxes.map(({ img, text }) => (
+              <FlexWrapper alignItems="center">
+                <ImgBox margin="0 40px 0 0">{img}</ImgBox>
+                <TextBase width="110px" fontSize={'18px'}>
+                  {text}
+                </TextBase>
+              </FlexWrapper>
+            ))}
+          </GridWrapper>
+        </Container>
+      </div>
+    </EveryStepStyles>
+  );
 };
 
 export default EveryStep;

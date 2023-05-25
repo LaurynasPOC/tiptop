@@ -54,7 +54,7 @@ const AccordionWrap = styled.div<AccordionWrapProps>`
           ? `
                 max-height: 500px;
                 opacity: 1;
-                padding: 10px 20px 20px 0;
+                padding: 10px 0 20px 0;
                 border-bottom: 1px solid rgba(255,255,255, 0.2);
             `
           : `
